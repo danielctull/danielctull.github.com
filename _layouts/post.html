@@ -11,41 +11,50 @@
             
 				<div class="sidebar four-col">
                 	<h3 class="logo"><a href="/">Daniel Tull</a></h3>
-                	<div class="sidebar four-col">                                   
+				</div>
+				
+				<div class="sidebar four-col">
+					<div class="section">
 						<h3>Recent Posts</h3>
-					    <ul>
+				    	<ul>
 							{% for post in site.posts limit:5 %}
-							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+								<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
-
-					<div class="sidebar four-col">
+				</div>
+				
+				<div class="sidebar four-col">
+					<div class="section">
 						<h3>{{ site.opensourcetitle }}</h3>
 						<ul>
 							{% for title in site.opensourcenames %}
-							<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
+								<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
 							{% endfor %}
-					    </ul>
+				    	</ul>
 					</div>
-
-					<div class="sidebar four-col">
+				</div>
+				
+				<div class="sidebar four-col">
+					<div class="section">
 						<h3>{{ site.apptitle }}</h3>
-					    <ul>
+			    		<ul>
 							{% for title in site.appnames %}
-							<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
+								<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
 							{% endfor %}
-					    </ul>
+				    	</ul>
 					</div>
+				</div>
 
-					<div class="sidebar four-col last-col">
+				<div class="sidebar four-col last-col">
+					<div class="section">
 						<h3>{{ site.abouttitle }}</h3>
-					    <ul>
+				    	<ul>
 							{% for title in site.aboutnames %}
-							<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
+								<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
 							{% endfor %}
-					    </ul>
-					</div>            
+				    	</ul>
+					</div>
 				</div>
             
 				<div class="header twelve-col last-col">
