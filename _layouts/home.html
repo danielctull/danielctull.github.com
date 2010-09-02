@@ -21,6 +21,12 @@
 						</ul>
 					</div>
 					
+					<div class="sixteen-col last-col">
+						<div class="main-content main-text">
+							{{ content }}
+	                	</div>
+	            	</div>
+					
 					<div class="sidebar four-col">                                   
 					    <ul><h3>Recent Posts</h3>
 							{% for post in site.posts limit:5 %}
@@ -51,12 +57,6 @@
 					        <li><a href="http://www.danieltull.co.uk/contact/">Contact Details</a></li>
 					    </ul>
 					</div>
-					
-					<div class="sixteen-col last-col">
-						<div class="main-content main-text">
-							{{ content }}
-	                	</div>
-	            	</div>
 				</div>
 			</div>
 		</div>
