@@ -52,7 +52,7 @@ blockquote {
 }
 
 
-.sidebar a {
+.sidebar .section ul li a {
     font-size: 0.7em;
 }
 
