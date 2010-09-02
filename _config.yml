@@ -14,5 +14,5 @@ appnames: ['Weather Maps', 'Sky+']
 appurls: ['http://www.weathermapsapp.com/', 'http://itunes.apple.com/gb/app/sky/id301250225?mt=8']
 
 abouttitle: About
-aboutnames: []
-abouturls: []
+aboutnames: ['Contact']
+abouturls: ['/contact/']
