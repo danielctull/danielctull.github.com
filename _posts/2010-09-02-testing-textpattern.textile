@@ -1,8 +1,0 @@
----
-layout: post
-title: Testing Textpattern
----
-
-Somewhere else[1]
-
-fn1. In the case where there is a hyperlink to http://www.steff.me/
