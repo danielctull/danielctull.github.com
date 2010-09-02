@@ -11,13 +11,10 @@
 			<div id="inner-wrapper" class="inner-wrapper">
 				<div class="page sixteen-col">
 					<div class="header sixteen-col last-col">
-						<ul>Find me on 
-							<li><a href="http://www.twitter.com/danielctull">Twitter</a>,</li>
-							<li><a href="http://bitbucket.org/danielctull/">BitBucket</a>,</li>
-							<li><a href="http://stackoverflow.com/users/155863/daniel-tull">Stack Overflow</a>,</li>
-							<li><a href="http://www.google.com/reader/shared/06047137066122335809">Google Reader</a>,</li>
-							<li><a href="http://www.flickr.com/photos/18319588@N00/">Flickr</a>,</li>
-							<li><a href="http://uk.linkedin.com/in/danieltull">LinkedIn</a></li>
+						<ul>{{ site.servicetitle }}
+							{% for title in site.servicenames %}
+							<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
 					
