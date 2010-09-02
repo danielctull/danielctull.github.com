@@ -36,30 +36,36 @@
 					</div>
 					
 					<div class="sidebar four-col">
-						<h3>{{ site.opensourcetitle }}</h3>
-						<ul>
-							{% for title in site.opensourcenames %}
-							<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-					    </ul>
+						<div class="section">
+							<h3>{{ site.opensourcetitle }}</h3>
+							<ul>
+								{% for title in site.opensourcenames %}
+									<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
+								{% endfor %}
+					    	</ul>
+						</div>
 					</div>
 					
 					<div class="sidebar four-col">
-						<h3>{{ site.apptitle }}</h3>
-					    <ul>
-							{% for title in site.appnames %}
-							<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-					    </ul>
+						<div class="section">
+							<h3>{{ site.apptitle }}</h3>
+				    		<ul>
+								{% for title in site.appnames %}
+									<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
+								{% endfor %}
+					    	</ul>
+						</div>
 					</div>
 
 					<div class="sidebar four-col last-col">
-						<h3>{{ site.abouttitle }}</h3>
-					    <ul>
-							{% for title in site.aboutnames %}
-							<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-					    </ul>
+						<div class="section">
+							<h3>{{ site.abouttitle }}</h3>
+					    	<ul>
+								{% for title in site.aboutnames %}
+									<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
+								{% endfor %}
+					    	</ul>
+						</div>
 					</div>
 				</div>
 			</div>
