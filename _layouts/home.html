@@ -20,7 +20,38 @@
 							<li><a href="http://uk.linkedin.com/in/danieltull">LinkedIn</a></li>
 						</ul>
 					</div>
-				
+					
+					<div class="sidebar four-col">                                   
+					    <ul><h3>Recent Posts</h3>
+							{% for post in site.posts limit:5 %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+					
+					<div class="sidebar four-col">
+						<ul><h3>Open Source Code</h3>
+							<li><a href="http://bitbucket.org/danielctull/dtresurrectionkit">Resurrection Kit</a></li>
+							<li><a href="http://bitbucket.org/danielctull/dtnibhook">DTNibHook</a></li>
+							<li><a href="http://bitbucket.org/danielctull/dtgridview/">DTGridView</a></li>
+					        <li><a href="http://bitbucket.org/danielctull/dtkit/">DTKit</a></li>
+					        <li><a href="http://bitbucket.org/danielctull/dtmusicmodel/">DTMusicModel</a></li>
+					    </ul>
+					</div>
+					
+					<div class="sidebar four-col">
+					    <ul><h3>Apps I've worked on</h3>
+					        <li><a href="http://www.weathermapsapp.com/">Weather Maps</a></li>
+					        <li><a href="http://itunes.apple.com/gb/app/sky/id301250225?mt=8">Sky+</a></li>
+					    </ul>
+					</div>
+
+					<div class="sidebar four-col last-col">
+					    <ul><h3>All About Me</h3>
+					        <li><a href="http://www.danieltull.co.uk/contact/">Contact Details</a></li>
+					    </ul>
+					</div>
+					
 					<div class="sixteen-col last-col">
 						<div class="main-content main-text">
 							{{ content }}
