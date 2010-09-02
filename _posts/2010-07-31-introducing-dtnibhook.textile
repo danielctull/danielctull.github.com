@@ -38,6 +38,6 @@ Upon loading a nib file, a nib hook dynamically sets the tag property for each o
     [nibHook release];
 
     return cell;
-}
+}</pre>
 
 I prefer this code to say <code>[cell viewWithTag:20]</code>, where the tag could be changed accidentally without notice by someone changing it in the nib. It's also worth noting that you can use one subclass for more than one nib, assuming they share their set of properties.
