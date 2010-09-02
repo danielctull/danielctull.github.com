@@ -6,8 +6,8 @@ opensourcenames: ['Resurrection Kit', 'DTNibHook', 'DTGridView', 'DTMusicModel']
 opensourceurls: ['http://bitbucket.org/danielctull/dtresurrectionkit', 'http://bitbucket.org/danielctull/dtnibhook', 'http://bitbucket.org/danielctull/dtgridview/', 'http://bitbucket.org/danielctull/dtmusicmodel/']
 
 servicetitle: Find me on
-servicenames: ['Twitter']
-serviceurls: ['http://twitter.com/danielctull']
+servicenames: ['Twitter', 'BitBucket', 'Stack Overflow', 'Google Reader', 'Flickr', 'LinkedIn']
+serviceurls: ['http://twitter.com/danielctull', 'http://bitbucket.org/danielctull/', 'http://stackoverflow.com/users/155863/daniel-tull', 'http://www.google.com/reader/shared/06047137066122335809', 'http://www.flickr.com/photos/18319588@N00/', 'http://uk.linkedin.com/in/danieltull']
 
 apptitle: Apps
 appnames: ['Weather Maps', 'Sky+']
