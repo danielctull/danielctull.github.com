@@ -6,5 +6,5 @@ opensourcenames: ['Resurrection Kit', 'DTNibHook', 'DTGridView', 'DTMusicModel']
 opensourceurls: ['http://bitbucket.org/danielctull/dtresurrectionkit', 'http://bitbucket.org/danielctull/dtnibhook', 'http://bitbucket.org/danielctull/dtgridview/', 'http://bitbucket.org/danielctull/dtmusicmodel/']
 
 apptitle: Apps Ive worked on
-appnames: ['Weather Maps','Sky+']
+appnames: ['Weather Maps','Sky']
 appurls: ['http://www.weathermapsapp.com/','http://itunes.apple.com/gb/app/sky/id301250225?mt=8']
