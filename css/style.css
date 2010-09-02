@@ -13,7 +13,7 @@ body {
 
 blockquote,
 pre,
-.section {
+.sidebar .section {
     background: #fff;
     border: solid 1px #E8E5DA;
     -webkit-border-radius: 5px;
@@ -25,7 +25,7 @@ blockquote {
 	padding: 0px 20px;
 }
 
-.section h3 {
+.sidebar .section h3 {
     background: #EAE2D1;
     border: solid 1px #CEC8B9;
     text-align:center;
@@ -61,7 +61,7 @@ blockquote {
     text-align:center;
 }
 
-.section h3,
+.sidebar .section h3,
 a {
     text-decoration: none;
     color: #777;
@@ -145,6 +145,10 @@ h1 {
 h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 1px 1px rgba(255,255,255,0.8);
     font-family: 'Museo500', san-serif;
+}
+
+.sidebar h3 {
+    margin: 0;
 }
 
 .post p {
