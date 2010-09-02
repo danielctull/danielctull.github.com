@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
 		<title>{{ site.name }} : {{ page.title }}</title>
 		<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
@@ -23,11 +23,10 @@
 					<div class="sidebar four-col">
 						<h3>Open Source Code</h3>
 						<ul>
-							<li><a href="http://bitbucket.org/danielctull/dtresurrectionkit">Resurrection Kit</a></li>
-							<li><a href="http://bitbucket.org/danielctull/dtnibhook">DTNibHook</a></li>
-							<li><a href="http://bitbucket.org/danielctull/dtgridview/">DTGridView</a></li>
-					        <li><a href="http://bitbucket.org/danielctull/dtkit/">DTKit</a></li>
-					        <li><a href="http://bitbucket.org/danielctull/dtmusicmodel/">DTMusicModel</a></li>
+							
+							{% for title in site.opensourcenames %}
+							<li><a href="http://bitbucket.org/danielctull/dtresurrectionkit">{{ title }}</a></li>
+							{% endfor %}
 					    </ul>
 					</div>
 

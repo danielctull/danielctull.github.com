@@ -1,2 +1,5 @@
 permalink: pretty
 name: Daniel Tull
+
+opensourcenames: ['One', 'Two']
+opensourceurls: ['g.com', 't.com']
