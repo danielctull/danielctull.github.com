@@ -13,7 +13,7 @@
 					<div class="header sixteen-col last-col">
 						<ul>{{ site.servicetitle }}
 							{% for title in site.servicenames %}
-							<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a>{% if !forloop.last %},{% endif %}</li>
+							<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a>{% if forloop.last == false %},{% endif %}</li>
 							{% endfor %}
 						</ul>
 					</div>
