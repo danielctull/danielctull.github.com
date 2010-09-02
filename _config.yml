@@ -9,10 +9,10 @@ servicetitle: Find me on
 servicenames: ['Twitter', 'BitBucket', 'Stack Overflow', 'Google Reader', 'Flickr', 'LinkedIn']
 serviceurls: ['http://twitter.com/danielctull', 'http://bitbucket.org/danielctull/', 'http://stackoverflow.com/users/155863/daniel-tull', 'http://www.google.com/reader/shared/06047137066122335809', 'http://www.flickr.com/photos/18319588@N00/', 'http://uk.linkedin.com/in/danieltull']
 
-apptitle: Apps
+apptitle: Apps I've worked on
 appnames: ['Weather Maps', 'Sky+']
 appurls: ['http://www.weathermapsapp.com/', 'http://itunes.apple.com/gb/app/sky/id301250225?mt=8']
 
-abouttitle: About
+abouttitle: All About Me
 aboutnames: ['Contact']
 abouturls: ['/contact/']
