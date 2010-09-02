@@ -21,9 +21,8 @@
 					</div>
 
 					<div class="sidebar four-col">
-						<h3>Open Source Code</h3>
+						<h3>{{ opensourcetitle }}</h3>
 						<ul>
-							
 							{% for title in site.opensourcenames %}
 							<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
 							{% endfor %}
@@ -31,29 +30,29 @@
 					</div>
 
 					<div class="sidebar four-col">
-						<h3>Apps I've worked on</h3>
+						<h3>{{ apptitle }}</h3>
 					    <ul>
-					        <li><a href="http://www.weathermapsapp.com/">Weather Maps</a></li>
-					        <li><a href="http://itunes.apple.com/gb/app/sky/id301250225?mt=8">Sky+</a></li>
+							{% for title in site.appnames %}
+							<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
+							{% endfor %}
 					    </ul>
 					</div>
 
 					<div class="sidebar four-col last-col">
-						<h3>All About Me</h3>
+						<h3>{{ abouttitle }}</h3>
 					    <ul>
-					        <li><a href="http://www.danieltull.co.uk/contact/">Contact Details</a></li>
+							{% for title in site.aboutnames %}
+							<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
+							{% endfor %}
 					    </ul>
 					</div>            
 				</div>
             
 				<div class="header twelve-col last-col">
-					<ul>Find me on 
-						<li><a href="http://www.twitter.com/danielctull">Twitter</a>,</li>
-						<li><a href="http://bitbucket.org/danielctull/">BitBucket</a>,</li>
-						<li><a href="http://stackoverflow.com/users/155863/daniel-tull">Stack Overflow</a>,</li>
-						<li><a href="http://www.google.com/reader/shared/06047137066122335809">Google Reader</a>,</li>
-						<li><a href="http://www.flickr.com/photos/18319588@N00/">Flickr</a>,</li>
-						<li><a href="http://uk.linkedin.com/in/danieltull">LinkedIn</a></li>
+					<ul>{{ servicetitle }}
+						{% for title in site.servicenames %}
+						<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a></li>
+						{% endfor %}
 					</ul>
 				</div>
 				
