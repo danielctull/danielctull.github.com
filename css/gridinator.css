@@ -1,0 +1,257 @@
+/* 
+========================
+  GRIDINATOR CSS v0.3
+  http://gridinator.com/
+  
+  GRIDINATOR CSS is a very basic framework to create
+  grid-based layouts. The content of this file is 
+  provided as-is, without support.
+  
+  If you would like to contact GRIDINATOR to suggest
+  improvements, to ask for help or to file a bug report, 
+  please feel free to email: gridinator@steff.me
+  
+  Your grid settings:
+  	columns: 16
+  	column width: 50px
+  	column margin: 10px
+  	container margin: 10px
+    
+=========================
+*/
+* { /* quick reset */
+	margin: 0;	
+}
+
+body { 
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.wrapper {
+	margin: 0 auto; /* This centers the grid. Remove this line to place the grid on the left of the page. */
+	text-align: left;
+	width: 970px;
+}
+
+.inner-wrapper {
+	background: url(gridinator.png) repeat-y 0 0; /* The file gridinator.png is a grid background; delete this line to remove it. If you did not generate a background image, you can still do so by going to http://gridinator.com/ and entering the details found at the top of this CSS file. You will then be given a grid image to match your original grid.  */
+	clear: both;
+	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
+	float: left;
+	padding: 0 10px 0 10px;
+	position: relative;
+	width: 950px;
+}
+
+
+
+
+.container {
+	clear: both;
+	float: left;
+	margin: 0;
+	width: 100%;	
+}
+.one-col, .two-col, .three-col, .four-col, .five-col, .six-col, .seven-col, .eight-col, .nine-col, .ten-col, .eleven-col, .twelve-col, .thirteen-col, .fourteen-col, .fifteen-col, .sixteen-col {
+	clear: none;
+	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	position: relative;
+}
+.one-col {
+	width: 50px;
+}
+
+.two-col {
+	width: 110px;
+}
+
+.three-col {
+	width: 170px;
+}
+
+.four-col {
+	width: 230px;
+}
+
+.five-col {
+	width: 290px;
+}
+
+.six-col {
+	width: 350px;
+}
+
+.seven-col {
+	width: 410px;
+}
+
+.eight-col {
+	width: 470px;
+}
+
+.nine-col {
+	width: 530px;
+}
+
+.ten-col {
+	width: 590px;
+}
+
+.eleven-col {
+	width: 650px;
+}
+
+.twelve-col {
+	width: 710px;
+}
+
+.thirteen-col {
+	width: 770px;
+}
+
+.fourteen-col {
+	width: 830px;
+}
+
+.fifteen-col {
+	width: 890px;
+}
+
+.sixteen-col {
+	width: 950px;
+	margin-right: 0;
+}
+
+.prefix-one {
+	margin-left: 60px;
+}
+
+.prefix-two {
+	margin-left: 120px;
+}
+
+.prefix-three {
+	margin-left: 180px;
+}
+
+.prefix-four {
+	margin-left: 240px;
+}
+
+.prefix-five {
+	margin-left: 300px;
+}
+
+.prefix-six {
+	margin-left: 360px;
+}
+
+.prefix-seven {
+	margin-left: 420px;
+}
+
+.prefix-eight {
+	margin-left: 480px;
+}
+
+.prefix-nine {
+	margin-left: 540px;
+}
+
+.prefix-ten {
+	margin-left: 600px;
+}
+
+.prefix-eleven {
+	margin-left: 660px;
+}
+
+.prefix-twelve {
+	margin-left: 720px;
+}
+
+.prefix-thirteen {
+	margin-left: 780px;
+}
+
+.prefix-fourteen {
+	margin-left: 840px;
+}
+
+.prefix-fifteen {
+	margin-left: 900px;
+}
+
+.suffix-one {
+	margin-right: 70px;
+}
+
+.suffix-two {
+	margin-right: 130px;
+}
+
+.suffix-three {
+	margin-right: 190px;
+}
+
+.suffix-four {
+	margin-right: 250px;
+}
+
+.suffix-five {
+	margin-right: 310px;
+}
+
+.suffix-six {
+	margin-right: 370px;
+}
+
+.suffix-seven {
+	margin-right: 430px;
+}
+
+.suffix-eight {
+	margin-right: 490px;
+}
+
+.suffix-nine {
+	margin-right: 550px;
+}
+
+.suffix-ten {
+	margin-right: 610px;
+}
+
+.suffix-eleven {
+	margin-right: 670px;
+}
+
+.suffix-twelve {
+	margin-right: 730px;
+}
+
+.suffix-thirteen {
+	margin-right: 790px;
+}
+
+.suffix-fourteen {
+	margin-right: 850px;
+}
+
+.suffix-fifteen {
+	margin-right: 910px;
+}
+
+.clear { /* Useful generic clearing class. */
+	clear: both;
+}
+.last-col {
+	margin-right: 0;
+}
