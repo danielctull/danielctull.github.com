@@ -25,7 +25,7 @@
 						<ul>
 							
 							{% for title in site.opensourcenames %}
-							<li><a href="http://bitbucket.org/danielctull/dtresurrectionkit">{{ title }}</a></li>
+							<li><a href="{{ opensourceurls[forloop.index] }}">{{ title }}</a></li>
 							{% endfor %}
 					    </ul>
 					</div>

@@ -1,5 +1,5 @@
 permalink: pretty
 name: Daniel Tull
 
-opensourcenames: ['One', 'Two']
-opensourceurls: ['g.com', 't.com']
+opensourcenames: ['Resurrection Kit', 'DTNibHook', 'DTGridView' , 'DTMusicModel']
+opensourceurls: ['http://bitbucket.org/danielctull/dtresurrectionkit', 'http://bitbucket.org/danielctull/dtnibhook', 'http://bitbucket.org/danielctull/dtgridview/', 'http://bitbucket.org/danielctull/dtmusicmodel/']
