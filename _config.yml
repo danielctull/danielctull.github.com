@@ -7,7 +7,7 @@ opensourceurls: ['http://bitbucket.org/danielctull/dtresurrectionkit', 'http://b
 
 servicetitle: Find me on
 servicenames: ['Twitter']
-serviceurls: ['http://www.twitter.com/danielctull']
+serviceurls: ['http://twitter.com/danielctull']
 
 apptitle: Apps
 appnames: ['Weather Maps', 'Sky+']
