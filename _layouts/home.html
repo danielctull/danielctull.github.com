@@ -43,17 +43,20 @@
 					</div>
 					
 					<div class="sidebar four-col">
-						<h3>Apps I've worked on</h3>
+						<h3>{{ site.apptitle }}</h3>
 					    <ul>
-					        <li><a href="http://www.weathermapsapp.com/">Weather Maps</a></li>
-					        <li><a href="http://itunes.apple.com/gb/app/sky/id301250225?mt=8">Sky+</a></li>
+							{% for title in site.appnames %}
+							<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
+							{% endfor %}
 					    </ul>
 					</div>
 
 					<div class="sidebar four-col last-col">
-						<h3>All About Me</h3>
+						<h3>{{ site.abouttitle }}</h3>
 					    <ul>
-					        <li><a href="http://www.danieltull.co.uk/contact/">Contact Details</a></li>
+							{% for title in site.aboutnames %}
+							<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
+							{% endfor %}
 					    </ul>
 					</div>
 				</div>
