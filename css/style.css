@@ -27,6 +27,7 @@ blockquote {
 
 .archive li {
 	list-style: none;
+	margin-top: 4px;
 }
 
 .sidebar ul {
