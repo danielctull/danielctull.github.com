@@ -25,6 +25,10 @@ blockquote {
 	padding: 0px 20px;
 }
 
+.archive ul li {
+	list-style: none;
+}
+
 .sidebar ul {
 	padding: 0;	
 }
