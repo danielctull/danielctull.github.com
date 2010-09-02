@@ -6,13 +6,13 @@ opensourcenames: ['Resurrection Kit', 'DTNibHook', 'DTGridView', 'DTMusicModel']
 opensourceurls: ['http://bitbucket.org/danielctull/dtresurrectionkit', 'http://bitbucket.org/danielctull/dtnibhook', 'http://bitbucket.org/danielctull/dtgridview/', 'http://bitbucket.org/danielctull/dtmusicmodel/']
 
 apptitle: Apps
-appnames: ['Weather Maps','Sky+']
-appurls: ['http://www.twitter.com/danielctull','http://bitbucket.org/danielctull/']
+appnames: []
+appurls: []
 
 abouttitle: All About Me
-aboutnames: ['Contact Details']
-abouturls: ['/contact/']
+aboutnames: []
+abouturls: []
 
 servicetitle: Find me on
-servicenames: ['Twitter']
-serviceurls: ['http://www.twitter.com/danielctull']
+servicenames: []
+serviceurls: []
