@@ -25,6 +25,10 @@ blockquote {
 	padding: 0px 20px;
 }
 
+.sidebar ul {
+	margin: 0;	
+}
+
 .sidebar .section h3 {
     background: #EAE2D1;
     border: solid 1px #CEC8B9;
