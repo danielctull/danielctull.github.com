@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New entitlements.plist for app submission
+title: Testing Textpattern
 ---
 
 Somewhere else[1]
