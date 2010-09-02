@@ -21,7 +21,7 @@
 					</div>
 
 					<div class="sidebar four-col">
-						<h3>{{ opensourcetitle }}</h3>
+						<h3>{{ site.opensourcetitle }}</h3>
 						<ul>
 							{% for title in site.opensourcenames %}
 							<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
@@ -30,7 +30,7 @@
 					</div>
 
 					<div class="sidebar four-col">
-						<h3>{{ apptitle }}</h3>
+						<h3>{{ site.apptitle }}</h3>
 					    <ul>
 							{% for title in site.appnames %}
 							<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
@@ -39,7 +39,7 @@
 					</div>
 
 					<div class="sidebar four-col last-col">
-						<h3>{{ abouttitle }}</h3>
+						<h3>{{ site.abouttitle }}</h3>
 					    <ul>
 							{% for title in site.aboutnames %}
 							<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
@@ -49,7 +49,7 @@
 				</div>
             
 				<div class="header twelve-col last-col">
-					<ul>{{ servicetitle }}
+					<ul>{{ site.servicetitle }}
 						{% for title in site.servicenames %}
 						<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a></li>
 						{% endfor %}
