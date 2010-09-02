@@ -1,0 +1,8 @@
+---
+layout: post
+title: New entitlements.plist for app submission
+---
+
+Somewhere else[1]
+
+fn1. In the case where there is a hyperlink to http://www.steff.me/
