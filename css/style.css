@@ -2,7 +2,7 @@
 
 body {
     background: #F5F3ED;
-    font-family: "Lucida Grande", Helvetica, Lucida, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #454545;
 }
 
@@ -11,6 +11,7 @@ body {
     padding-bottom: 30px;
 }
 
+blockquote,
 pre,
 .sidebar ul {
     background: #fff;
@@ -20,7 +21,11 @@ pre,
     margin: 20px;
 }
 
-.sidebar ul h1 {
+blockquote {
+	padding: 0px 20px;
+}
+
+.sidebar ul h3 {
     background: #EAE2D1;
     border: solid 1px #CEC8B9;
     text-align:center;
@@ -51,12 +56,12 @@ pre,
     font-size: 0.7em;
 }
 
-.sidebar h1 {
+.sidebar h3 {
     font-size:2em;
     text-align:center;
 }
 
-.sidebar ul h1,
+.sidebar ul h3,
 a {
     text-decoration: none;
     color: #777;
@@ -66,6 +71,7 @@ a:hover {
     text-decoration: underline;
 }
 
+#disqus_thread,
 .main-text {
     color: #666;
     padding: 20px;
@@ -141,13 +147,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Museo500', san-serif;
 }
 
-.sidebar h1 {
+.sidebar h3 {
     margin: 0;
 }
 
 .post p {
     font-size: 0.9em;
     font-weight: normal;
+    line-height: 1.6em;
 }
 
 .post h1 {
@@ -185,11 +192,10 @@ h1, h2, h3, h4, h5, h6 {
 
 span.amp, .highlight {
     font-size: 1.2em;
-	font-family:"Warnock Pro",Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+	font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
 	font-style:italic;
     font-weight: normal;
 }
-
 
 
 
