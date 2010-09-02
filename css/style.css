@@ -13,7 +13,7 @@ body {
 
 blockquote,
 pre,
-.sidebar.section {
+.section {
     background: #fff;
     border: solid 1px #E8E5DA;
     -webkit-border-radius: 5px;
@@ -61,7 +61,7 @@ blockquote {
     text-align:center;
 }
 
-.sidebar ul h3,
+.section h3,
 a {
     text-decoration: none;
     color: #777;
