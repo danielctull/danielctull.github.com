@@ -59,8 +59,8 @@
 				
 				<div class="twelve-col last-col">
 					<div class="post main-text">
-						<h1 id="">{{ post.title }}</h1>
-						<h5>{{ post.date }}</h5>
+						<h1>{{ title }}</h1>
+						<h5>{{ date | date_to_long_string }}</h5>
 						{{ content }}
 					</div>
 				</div>
