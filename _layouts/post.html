@@ -31,12 +31,7 @@
 					</div>
 					
 					<div class="section">
-						<h3>{{ site.apptitle }}</h3>
-			    		<ul>
-							{% for title in site.appnames %}
-								<li><a href="{{ site.appurls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-				    	</ul>
+						{% include apps.html %}
 					</div>
 					
 					<div class="section">
