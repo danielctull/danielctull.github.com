@@ -13,43 +13,24 @@
                 	<h3 class="logo"><a href="/">Daniel Tull</a></h3>
 
 					<div class="section">
-						<h3><a href="/archive/">Recent Posts</a></h3>
-				    	<ul>
-							{% for post in site.posts limit:5 %}
-								<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-							{% endfor %}
-						</ul>
+						{% include recentpostsmenu.html %}
 					</div>
 					
 					<div class="section">
-						<h3>{{ site.opensourcetitle }}</h3>
-						<ul>
-							{% for title in site.opensourcenames %}
-								<li><a href="{{ site.opensourceurls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-				    	</ul>
+						{% include opensourcemenu.html %}
 					</div>
 					
 					<div class="section">
-						{% include apps.html %}
+						{% include appsmenu.html %}
 					</div>
 					
 					<div class="section">
-						<h3>{{ site.abouttitle }}</h3>
-				    	<ul>
-							{% for title in site.aboutnames %}
-								<li><a href="{{ site.abouturls[forloop.index0] }}">{{ title }}</a></li>
-							{% endfor %}
-				    	</ul>
+						{% include aboutmenu.html %}
 					</div>
 				</div>
             
 				<div class="header twelve-col last-col">
-					<ul>{{ site.servicetitle }}
-						{% for title in site.servicenames %}
-						<li><a href="{{ site.serviceurls[forloop.index0] }}">{{ title }}</a>{% if forloop.last == false %},{% endif %}</li>
-						{% endfor %}
-					</ul>
+					{% include servicesmenu.html %}
 				</div>
 				
 				<div class="twelve-col last-col">
