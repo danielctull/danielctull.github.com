@@ -147,10 +147,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Museo500', san-serif;
 }
 
-.sidebar h3 {
-    margin: 0;
-}
-
 .post p {
     font-size: 0.9em;
     font-weight: normal;
