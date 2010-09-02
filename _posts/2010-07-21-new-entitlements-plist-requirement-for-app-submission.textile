@@ -10,12 +10,12 @@ bq. *Invalid application-identifier Entitlement* – This error can occur if the
 While the message suggests the issue is with the Info.plist, it turns out that the issue was with my entitlements.plist file; Apple are requiring some new keys in the entitlements.plist file which I didn't have from my last submission. My new entitlements.plist now contains the following:
 
 <pre><dict>
-    &lt;key&gt;application-identifier&lt;/key&gt;
-    &lt;string&gt;$(AppIdentifierPrefix)$(CFBundleIdentifier)&lt;/string&gt;
-    &lt;key&gt;keychain-access-groups&lt;/key&gt;
-    &lt;array&gt;
-        &lt;string&gt;$(AppIdentifierPrefix)$(CFBundleIdentifier)&lt;/string&gt;
-    &lt;/array&gt;
-&lt;dict&gt;</pre>
+    <key>application-identifier</key>;
+    <string>$(AppIdentifierPrefix)$(CFBundleIdentifier)</string>
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)$(CFBundleIdentifier)</string>
+    </array>
+<dict></pre>
 
 I'm not sure when this was changed, so I could be massively behind the times, but hopefully this will save some people the hour I spent trying to work out the problem.
