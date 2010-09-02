@@ -60,7 +60,7 @@
 				<div class="twelve-col last-col">
 					<div class="post main-text">
 						<h1>{{ page.title }}</h1>
-						<h5>{{ page.date | date_to_long_string }}</h5>
+						<h5>{{ page.date | date: "%A, %d %B %Y PREF: %c" }}</h5>
 						{{ content }}
 					</div>
 				</div>
