@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing DTNibHook
+title: "Presentations"
 ---
 
 I am doing two talks over the next couple of weeks on the subject of iPhone development for the "righton iPhone Creators":http://groups.google.com/group/brighton-iphone-creators group and the "London iPhone Developer Group":http://www.linkedin.com/groups?gid=1798655.
