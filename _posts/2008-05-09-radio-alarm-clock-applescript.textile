@@ -9,7 +9,7 @@ Getting back to uni a couple of weeks ago, my radio alarm clock died. I'm not su
 
 set today to date string of (current date)
 
-set title_to_play to "Chris Moyles“
+set title_to_play to "Chris Moyles"
 
 tell application "EyeTV
 
@@ -49,11 +49,11 @@ You could look for any string or take out the check completely to play all of to
 
 You also need to set up a schedule in EyeTV to record the shows you want to play back, making sure that they start recording before you want to be woken up. In the event that EyeTV didn't record (through error or Moyles not actually being on) I have extended the script by adding the following if no recordings were found.
 
-<pre>tell application "iTunes“
+<pre>tell application "iTunes"
 
     activate
 
-    play playlist "Party Shuffle“
+    play playlist "Party Shuffle"
 
 end tell</pre>
 
