@@ -50,7 +50,7 @@ blockquote {
 
 .sidebar ul li {
 	line-height: 1.3em;
-    font-size: 0.8em;
+    font-size: 0.75em;
     text-align:left;
     margin-top: 8px;
     list-style: none;
@@ -95,7 +95,7 @@ a:hover {
 
 .header,
 .footer {
-    font-size: 0.8em;
+    font-size: 0.75em;
     color: #a6a6a6;
 }
 
