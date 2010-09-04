@@ -1,3 +1,5 @@
+/* @override http://danieltull.co.uk/css/style.css */
+
 @import url("gridinator.css");
 
 body {
@@ -47,6 +49,8 @@ blockquote {
 }
 
 .sidebar ul li {
+	line-height: 1.3em;
+    font-size: 0.8em;
     text-align:left;
     margin-top: 8px;
     list-style: none;
@@ -58,11 +62,6 @@ blockquote {
 
 .header ul li {
     display: inline;
-}
-
-
-.sidebar .section ul li a {
-    font-size: 0.7em;
 }
 
 .sidebar h3 {
@@ -96,8 +95,8 @@ a:hover {
 
 .header,
 .footer {
-    font-size: 0.7em;
-    color: #bbb;
+    font-size: 0.8em;
+    color: #a6a6a6;
 }
 
 .header {
@@ -105,7 +104,7 @@ a:hover {
 }
 
 .footer {
-    text-align: center;
+    text-align: left;
 }
 
 .header p,
@@ -152,7 +151,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+    text-shadow: rgba(255,255,255,0.8) 1px 1px 0px;
     font-family: 'Museo500', san-serif;
 }
 
@@ -181,13 +180,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
 }
 
-
 .service {
     display: inline-block;
 }
-
-
-
 
 .blogdate {
     float: left;
@@ -197,23 +192,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-left:10px;
 }
 
-
-
 span.amp, .highlight {
     font-size: 1.2em;
 	font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
 	font-style:italic;
     font-weight: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
