@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Presentation: Designing for the iPhone Developer
+title: Presentation - Designing for the iPhone Developer
 ---
 
 The slides from the talk I gave to the "Brighton iPhone Creators":http://groups.google.com/group/brighton-iphone-creators group last wednesday are available on "slide share here":http://www.slideshare.net/danielctull/designing-for-the-iphone-developer. The "Ribot":http://www.ribot.co.uk" team were there, and after my presentation, the whole group got talking about general user experience in iPhone apps.
