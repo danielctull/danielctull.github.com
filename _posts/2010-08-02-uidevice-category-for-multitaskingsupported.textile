@@ -19,3 +19,7 @@ To get around this, we can wrap it up with a category on UIDevice, using the met
 @end</pre>
 
 Now we can happily call <code>[[UIDevice currentDevice] dt_multitaskingSupported]</code> safe in the knowledge that it exists everywhere and is handling the checking of the real property.
+
+h5. Sunday, 05 September 2010
+
+I have created a "gist for this category":http://gist.github.com/565853, plus another to easily get testable system version values for the OS that is running.
