@@ -4,3 +4,8 @@
 .footer {
 	text-align: center;
 }
+
+.projecttitle {
+	text-shadow: rgba(255,255,255,0.8) 1px 1px 0px;
+    font-family: 'Museo500', san-serif;
+}
