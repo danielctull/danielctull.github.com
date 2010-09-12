@@ -14,3 +14,7 @@
 p.infotitle {
 	font-family: 'Museo500', san-serif;
 }
+
+.referencetitle {
+    text-transform: capitalize;
+}
