@@ -1,2 +1,2 @@
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title
 name: Daniel Tull
