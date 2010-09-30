@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DCTCoreData: DCTManagedObjectAutomatedSetup
+title: "DCTCoreData: DCTManagedObjectAutomatedSetup"
 ---
 
 This is the first of post about "DCTCoreData":http://github.com/danielctull/DCTCoreData, my additions to Apple's Core Data framework.
