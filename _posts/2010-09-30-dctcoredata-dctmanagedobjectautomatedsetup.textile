@@ -58,7 +58,7 @@ When pulling down this data, some of it might represent objects we already have 
 
 @end</pre>
 
-The predicate will have the entity gained either through the optional class method or the class name, and the predicate with format: <code>key == 'value'</code> (or ANDed equal checks for multiple keys). For the example above, if the value was "1234" the predicate would have the format <code>theID == '1234'<code>.
+The predicate will have the entity gained either through the optional class method or the class name, and the predicate with format: <code>key == 'value'</code> (or ANDed equal checks for multiple keys). For the example above, if the value was "1234" the predicate would have the format <code>theID == '1234'</code>.
 
 h2. Relationships
 
