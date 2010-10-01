@@ -20,7 +20,7 @@ Please email me to say you've used my code; It'll pretty much make my day if I h
 		<input type="hidden" name="item_name" value="Daniel Tull's Code">
 		<input type="hidden" name="currency_code" value="GBP">
 		<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-		<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+		<input class="paypalbutton" type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
 		</form>
 	</div>
 </div>
