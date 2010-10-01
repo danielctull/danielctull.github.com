@@ -3,6 +3,14 @@ layout: post
 title: Code
 ---
 
+This page lists an overview of my Cocoa open source code. It has all been written with the iPhone in mind, however some of it may work on the Mac too. You are free to use these in you own projects; both free and commercial.
+
+Please email me to say you've used my code; It'll pretty much make my day if I have kinds words in my inbox to read over breakfast!
+
+h2. Donations
+
+While you are free to use this code as you please, it takes time and effort to write and manage code. I'm very appreciative to any donations that may come my way. Below is a button that will allow you to send me money using PayPal.
+
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_donations">
 <input type="hidden" name="business" value="8DT2ZJ6UXQFZQ">
@@ -13,3 +21,40 @@ title: Code
 <input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
 <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
+
+h2. DCTCoreData
+
+A collection of additions to Apple's Core Data framework, including fetching from the managed object context, automated setup and synchronising of managed objects and keeping an order on related objects.
+
+<a href="http://github.com/danielctull/DCTCoreData">DCTCoreData on GitHub</a>
+
+h2. Resurrection Kit
+
+A framework to allow your application to return to the same point it exited. Don't be fooled by multitasking, when your app is eventually purged from memory, it'll be even more jarring that it doesn't return to it's last position.
+
+<a href="http://bitbucket.org/danielctull/dtresurrectionkit">Resurrection Kit on BitBucket</a>
+
+h2. DCTBetterDescription
+
+Trying to gather some decent descriptions for classes which could be better.
+
+<a href="http://github.com/danielctull/DCTBetterDescription">DCTBetterDescription on GitHub</a>
+
+h2. DTNibHook
+
+A small class to enable reuse of table view cells created in Interface Builder, using properties (instead of tags - eugh) to access the view hierarchy.
+
+<a href="http://bitbucket.org/danielctull/dtnibhook">DTNibHook on BitBucket</a>
+
+h2. DTGridView
+
+A two-dimensional scrolling view component for iOS. It has a similar API to UITableView, and similarly allows cell reuse.
+
+<a href="http://bitbucket.org/danielctull/dtgridview/">DTGridView on BitBucket</a>
+
+h2. DTMusicModel
+
+A Core Data model for the music library for iOS which allows faster access to the library once imported.
+
+<a href="http://bitbucket.org/danielctull/dtmusicmodel/">DTMusicModel on BitBucket</a>
+
