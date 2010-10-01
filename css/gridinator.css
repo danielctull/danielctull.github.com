@@ -38,7 +38,7 @@ body {
 }
 
 .inner-wrapper {
-	background: url(gridinator.png) repeat-y 0 0; /* The file gridinator.png is a grid background; delete this line to remove it. If you did not generate a background image, you can still do so by going to http://gridinator.com/ and entering the details found at the top of this CSS file. You will then be given a grid image to match your original grid.  */
+	/*background: url(gridinator.png) repeat-y 0 0; /* The file gridinator.png is a grid background; delete this line to remove it. If you did not generate a background image, you can still do so by going to http://gridinator.com/ and entering the details found at the top of this CSS file. You will then be given a grid image to match your original grid.  */
 	clear: both;
 	display: inline;/* IE double margin fix. Feel free to move this to your IE specific stylesheets. */
 	float: left;
