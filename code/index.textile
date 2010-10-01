@@ -8,7 +8,7 @@ This page lists an overview of my Cocoa open source code. It has all been writte
 Please email me to say you've used my code; It'll pretty much make my day if I have kinds words in my inbox to read over breakfast!
 
 <blockquote>
-	h2. Donations
+	<h2>Donations</h2>
 
 	While you are free to use this code as you please, it takes time and effort to write and manage code. I'm very appreciative to any donations that may come my way. Below is a button that will allow you to send me money using PayPal.
 
@@ -22,7 +22,6 @@ Please email me to say you've used my code; It'll pretty much make my day if I h
 	<input type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
 	<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 	</form>
-
 </blockquote>
 
 h2. DCTCoreData
