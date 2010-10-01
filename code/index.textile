@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code
+title: Source Code Overview
 ---
 
 This page lists an overview of my Cocoa open source code. It has all been written with the iPhone in mind, however some of it may work on the Mac too. You are free to use these in you own projects; both free and commercial.
