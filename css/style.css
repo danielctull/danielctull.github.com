@@ -76,7 +76,9 @@ a {
 }
 
 .sidebar a {
-
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 a:hover {
