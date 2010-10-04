@@ -9,7 +9,7 @@ Please email me to say you've used my code; It'll pretty much make my day if I h
 
 <div class="sidebar">
 	<div class="section">
-		<h3>Donations</h2>
+		<h3>Donations</h3>
 
 			While you are free to use this code as you please, it takes time and effort to write and manage code. I'm very appreciative to any donations that may come my way. Below is a button that will allow you to send me money using PayPal.
 
