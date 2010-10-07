@@ -51,6 +51,7 @@ blockquote {
     border: solid 1px #CEC8B9 !important;
     margin-top: 10px !important;
     color: #666 !important;
+    padding: 8px !important;
 }
 
 .gist-meta a {
