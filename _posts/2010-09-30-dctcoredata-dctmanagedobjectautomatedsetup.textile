@@ -15,24 +15,7 @@ h2. Property Mapping and Conversion
 
 Of course, this is hardly ever going to happen; I find myself having properties which are named slightly different or needing to convert values returned into the proper Cocoa types (more times than not this is an NSDate). DCTAutomatedSetup handles these cases by asking the managed object subclass for a mapping of remote names to local names or by asking the subclass to convert the value in the dictionary. In the example in the project, I have implemented these methods in the following category for DCTCDGroup:
 
-<pre>@implementation DCTCDGroup (DCTManagedObjectAutomatedSetup)
-
-+ (NSDictionary *)dct_mappingFromRemoteNamesToLocalNames {
-	NSMutableDictionary *d = [[NSMutableDictionary alloc] init];
-	[d setObject:@"groupID" forKey:@"id"];
-	[d setObject:@"groupDescription" forKey:@"description"];
-	return [d autorelease];	
-}
-
-+ (id)dct_convertValue:(id)value toCorrectTypeForKey:(NSString *)key {
-	
-	if ([key isEqualToString:@"date"])
-		return [NSDate dateWithTimeIntervalSince1970:[value doubleValue]];
-	
-	return nil;
-}
-
-@end</pre>
+<script src="http://gist.github.com/616011.js"></script>
 
 Here we see that the dictionary will have the keys "id" and "description", both of which cannot be used in a managed object anyway, so we set up the dictionary with the remote name acts as a key for the local names "groupID" and "groupDescription". We can also see a conversion of the date attribute, which is actually the seconds since 1970, the returned NSDate object is used by DCTAutomatedSetup to store.
 
@@ -44,19 +27,7 @@ h2. Duplicate objects
 
 When pulling down this data, some of it might represent objects we already have stored. To resolve this, DCTAutomatedSetup calls <code>+dct_uniqueKey</code> for a unique key (or <code>+dct_uniqueKeys</code> for an array of keys) and uses the returned value to create a predicate to fetch from the managed object context. If the object exists, it will call <code>-dct_setupFromDictionary:</code> on that object to assign any changed values before returning that fetched object. Below is an example from the project DCTCDItem and how it gives its key "theID" to use as the unique key. (Note: currently this key must be the local form of the key.)
 
-<pre>@implementation DCTCDItem (DCTManagedObjectAutomatedSetup)
-
-+ (NSString *)dct_uniqueKey {
-	return @"theID";
-}
-
-+ (NSDictionary *)dct_mappingFromRemoteNamesToLocalNames {
-	NSMutableDictionary *d = [[NSMutableDictionary alloc] init];
-	[d setObject:@"theID" forKey:@"remoteID"];
-	return [d autorelease];	
-}
-
-@end</pre>
+<script src="http://gist.github.com/616038.js"></script>
 
 The predicate will have the entity gained either through the optional class method or the class name, and the predicate with format: <code>key == 'value'</code> (or ANDed equal checks for multiple keys). For the example above, if the value was "1234" the predicate would have the format <code>theID == '1234'</code>.
 

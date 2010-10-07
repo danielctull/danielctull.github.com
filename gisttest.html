@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daniel Tull: DCTCoreData: DCTManagedObjectAutomatedSetup</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="fonts/museo/stylesheet.css" type="text/css" media="screen" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/DanielTull" />
+		<link rel="service.feed" type="application/atom+xml" title="Atom" href="http://feeds.feedburner.com/DanielTull" />
+	</head>
+	<body>
+		<div id="wrapper" class="wrapper">
+			<div id="inner-wrapper" class="page inner-wrapper">
+            
+				<div class="sidebar four-col">
+                	<h3 class="logo"><a href="/">Daniel Tull</a></h3>
+
+					<div class="section">
+						<h3>Previous Posts</h3>
+<ul>
+	
+		<li><a href="/blog/2010/09/30/dctcoredata-dctmanagedobjectautomatedsetup">DCTCoreData: DCTManagedObjectAutomatedSetup</a></li>
+	
+		<li><a href="/blog/2010/08/02/uidevice-category-for-multitaskingsupported">UIDevice category for multitaskingSupported</a></li>
+	
+		<li><a href="/blog/2010/07/31/introducing-dtnibhook">Introducing DTNibHook</a></li>
+	
+		<li><a href="/blog/2010/07/21/new-entitlements-plist-requirement-for-app-submission">New entitlements.plist for app submission</a></li>
+	
+		<li><a href="/blog/2010/01/12/2009">2009</a></li>
+	
+	<li class="more"><a href="/archive/">Archive</a></li>
+</ul>
+
+					</div>
+					
+					<div class="section">
+						<h3>Open Source Code</h3>
+<ul>
+	<li><a href="http://github.com/danielctull/DCTCoreData">DCTCoreData</a></li>
+	<li><a href="http://bitbucket.org/danielctull/dtresurrectionkit">Resurrection Kit</a></li>
+	<li><a href="http://github.com/danielctull/DCTBetterDescription">DCTBetterDescription</a></li>
+	<li><a href="http://bitbucket.org/danielctull/dtnibhook">DTNibHook</a></li>
+	<li><a href="http://bitbucket.org/danielctull/dtgridview/">DTGridView</a></li>
+	<li><a href="http://bitbucket.org/danielctull/dtmusicmodel/">DTMusicModel</a></li>
+	<li class="more"><a href="/code/">Source Code Overview</a></li>
+</ul>
+					</div>
+					
+					<div class="section">
+						<h3>Apps I've worked on</h3>
+<ul>
+	<li><a href="http://www.weathermapsapp.com/">Weather Maps</a></li>
+	<li><a href="http://itunes.apple.com/gb/app/sky/id301250225?mt=8">Sky+</a></li>
+</ul>
+					</div>
+					
+					<div class="section">
+						<h3>All About Me</h3>
+<ul>
+	<li><a href="/contact/">Contact Details</a></li>
+</ul>
+					</div>
+				</div>
+            
+				<div class="header twelve-col last-col">
+					<ul>Find me on 
+    <li><a href="http://twitter.com/danielctull">Twitter</a>,</li>
+    <li><a href="http://bitbucket.org/danielctull/">BitBucket</a>,</li>
+    <li><a href="http://github.com/danielctull">Github</a>,</li>
+    <li><a href="http://stackoverflow.com/users/155863/daniel-tull">Stack Overflow</a>,</li>
+    <li><a href="http://google.com/reader/shared/06047137066122335809">Google Reader</a>,</li>
+    <li><a href="http://flickr.com/photos/18319588@N00/">Flickr</a>,</li>
+    <li><a href="http://uk.linkedin.com/in/danieltull">LinkedIn</a></li>
+</ul>
+				</div>
+				
+				<div class="twelve-col last-col">
+					<div class="post main-text">
+						<h1>DCTCoreData: DCTManagedObjectAutomatedSetup</h1>
+						<h5 class="postdate">Thursday, 30 September 2010</h5>
+						<p>This is the first of post about <a href="http://github.com/danielctull/DCTCoreData">DCTCoreData</a>, my additions to Apple&#8217;s Core Data framework.</p>
+<p>When dealing with web services, I am usually putting returned data into a Core Data model for offline caching. This involves running the data through a parser which gives me a dictionary or an array of dictionaries. Then looping through each dictionary&#8217;s keys, possibly converting the values and storing them in the appropriate managed object.</p>
+<p>A lot of this is really tedious <code>-objectForKey:</code> stuff, so I looked at the best way to implement a reusable method of running through this tediousness. The DCTAutomatedSetup category on NSManagedObject is my solution.</p>
+<p>If the keys in the dictionary returned from the server match the attribute or relationships names of the managed object, and the types match, then this category will simply transfer set the values for the key names.</p>
+<h2>Property Mapping and Conversion</h2>
+<p>Of course, this is hardly ever going to happen; I find myself having properties which are named slightly different or needing to convert values returned into the proper Cocoa types (more times than not this is an NSDate). DCTAutomatedSetup handles these cases by asking the managed object subclass for a mapping of remote names to local names or by asking the subclass to convert the value in the dictionary. In the example in the project, I have implemented these methods in the following category for DCTCDGroup:</p>
+
+<script src="http://gist.github.com/616011.js"></script>
+
+<p>Here we see that the dictionary will have the keys &#8220;id&#8221; and &#8220;description&#8221;, both of which cannot be used in a managed object anyway, so we set up the dictionary with the remote name acts as a key for the local names &#8220;groupID&#8221; and &#8220;groupDescription&#8221;. We can also see a conversion of the date attribute, which is actually the seconds since 1970, the returned NSDate object is used by DCTAutomatedSetup to store.</p>
+<h2>Entity Names</h2>
+<p>By default, DCTAutomatedSetup uses the class name as the entity name. If for some reason this is not the case, the method <code>+dct_entityName</code> is provided to give the entity name the class represents. If this is implemented DCTAutomatedSetup will use this value and not the classname.</p>
+<h2>Duplicate objects</h2>
+<p>When pulling down this data, some of it might represent objects we already have stored. To resolve this, DCTAutomatedSetup calls <code>+dct_uniqueKey</code> for a unique key (or <code>+dct_uniqueKeys</code> for an array of keys) and uses the returned value to create a predicate to fetch from the managed object context. If the object exists, it will call <code>-dct_setupFromDictionary:</code> on that object to assign any changed values before returning that fetched object. Below is an example from the project DCTCDItem and how it gives its key &#8220;theID&#8221; to use as the unique key. (Note: currently this key must be the local form of the key.)</p>
+
+
+<script src="http://gist.github.com/616038.js"></script>
+
+<p>The predicate will have the entity gained either through the optional class method or the class name, and the predicate with format: <code>key == 'value'</code> (or ANDed equal checks for multiple keys). For the example above, if the value was &#8220;1234&#8221; the predicate would have the format <code>theID == '1234'</code>.</p>
+<h2>Relationships</h2>
+<p>DCTAutomatedSetup has the knowledge of your Core Data model, so if a key for the object is a relationship and the key in the dictionary is a dictionary, it will call <code>+dct_objectForDictionary:managedObjectContext:</code> on the related class with the dictionary. What this means is that you could give a whole object graph in a dictionary and all the objects will get hooked up in Core Data, especially useful for APIs which give back objects which contains other nested objects. For example you might get back an array of tweets, each having a reference to a twitter user that you would represent as its own object.</p>
+<h2>Manual handling</h2>
+<p>For some reason, you may just want to handle the dictionary yourself, for this reason <code>+dct_handleObjectForDictionary:</code> and <code>-dct_handleKey:value:</code> exist to get the object for the dictionary or set the property with the key/value from the dictionary. I&#8217;ve not needed to use these in my code yet, but the option is there if you need it.</p>
+<p>Hopefully this explains the DCTAutomatedSetup category. I have a few changes in mind that are listed in the project&#8217;s <a href="http://github.com/danielctull/DCTCoreData/issues">Issues</a>. If you have any ideas for it please post on there as an issue.</p>
+					</div>
+				</div>
+				
+				<div class="footer sixteen-col">
+					<p>&copy;2010 Daniel Tull. Completeley <a href="http://gridinator.com/">Gridinated</a>. Design inspiration from <a href="http://steffanwilliams.co.uk/">Steffan Williams</a>.</p>
+				</div>
+				
+			</div>
+		</div>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-1197300-1";
+	urchinTracker();
+</script>
+  	</body>
+</html>
