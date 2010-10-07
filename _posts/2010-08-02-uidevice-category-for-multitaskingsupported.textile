@@ -23,3 +23,7 @@ Now we can happily call <code>[[UIDevice currentDevice] dt_multitaskingSupported
 h5. Sunday, 05 September 2010
 
 I have created a "gist for this category":http://gist.github.com/565853, plus another to easily get testable system version values for the OS that is running.
+
+h5. Friday, 08 October 2010
+
+<script src="http://gist.github.com/616011.js"></script>
