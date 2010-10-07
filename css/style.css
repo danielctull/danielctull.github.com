@@ -32,6 +32,32 @@ blockquote {
 	margin-top: 8px;
 }
 
+.gist-file {
+    border: solid 1px #E8E5DA !important;
+    -webkit-border-radius: 5px !important;
+    padding: 10px !important;
+    background: #fff !important;
+}
+
+.gist-data {
+	background: #fff !important;
+	border: none !important;
+}
+
+.gist-meta {
+    font-family: Helvetica, sans-serif !important;
+	background: #EAE2D1 !important;
+    margin: 0px -15px !important;
+    border: solid 1px #CEC8B9 !important;
+    margin-top: 10px !important;
+    color: #666 !important;
+    padding: 8px !important;
+}
+
+.gist-meta a {
+    color: #F25F2F !important;
+}
+
 .sidebar ul {
 	padding: 0;	
 }
@@ -124,7 +150,7 @@ a:hover {
 }
 
 pre {
-    font-family: "Menlo", Courier, mono;
+    font-family: "Menlo", Courier, mono !important;
     font-size: 0.7em;
     margin: 0px;
 }
