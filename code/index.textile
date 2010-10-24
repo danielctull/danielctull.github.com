@@ -27,6 +27,19 @@ Please email me to say you've used my code; It'll pretty much make my day if I h
 	</div>
 </div>
 
+h2. DCTFoundation
+
+My additions to the Foundation level of Cocoa.
+
+<a href="http://github.com/danielctull/DCTFoundation">DCTFoundation on GitHub</a>
+
+
+h2. DCTUIKit
+
+My additions to UIKit on the iPhone.
+
+<a href="http://github.com/danielctull/DCTUIKit">DCTUIKit on GitHub</a>
+
 h2. DCTCoreData
 
 A collection of additions to Apple's Core Data framework, including fetching from the managed object context, automated setup and synchronising of managed objects and keeping an order on related objects.
@@ -37,7 +50,7 @@ h2. Resurrection Kit
 
 A framework to allow your application to return to the same point it exited. Don't be fooled by multitasking, when your app is eventually purged from memory, it'll be even more jarring that it doesn't return to it's last position.
 
-<a href="http://bitbucket.org/danielctull/dtresurrectionkit">Resurrection Kit on BitBucket</a>
+<a href="http://github.com/danielctull/DTResurrectionKit">Resurrection Kit on GitHub</a>
 
 h2. DCTBetterDescription
 
@@ -49,17 +62,17 @@ h2. DTNibHook
 
 A small class to enable reuse of table view cells created in Interface Builder, using properties (instead of tags - eugh) to access the view hierarchy.
 
-<a href="http://bitbucket.org/danielctull/dtnibhook">DTNibHook on BitBucket</a>
+<a href="http://github.com/danielctull/DTNibHook">DTNibHook on GitHub</a>
 
 h2. DTGridView
 
 A two-dimensional scrolling view component for iOS. It has a similar API to UITableView, and similarly allows cell reuse.
 
-<a href="http://bitbucket.org/danielctull/dtgridview/">DTGridView on BitBucket</a>
+<a href="http://github.com/danielctull/DTGridView/">DTGridView on GitHub</a>
 
 h2. DTMusicModel
 
 A Core Data model for the music library for iOS which allows faster access to the library once imported.
 
-<a href="http://bitbucket.org/danielctull/dtmusicmodel/">DTMusicModel on BitBucket</a>
+<a href="http://github.com/danielctull/DTMusicModel/">DTMusicModel on GitHub</a>
 
