@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Tint Calc"
+---
+
+For a while I have had an issue while contracting. The method used to customise the colours of navigation bars and toolbars in iOS seemed alien to the majority of designers actually trying to come up with the right colour to use as the tint value. The way I've had to deal with this is make a new build to device for them to actually see with the new values they give. Until recently when I realised, I could make an app so anyone could come up with that perfect colour, without having to get me to do custom builds just to check it out.
+
+And that's exactly what "Tint Calc":http://dnl.tl/TintCalc is all about.
+
+<img class=" aligncenter" src="/images/tint-calc/1.0.png" alt="Tint Calc's main screen" width="320" height="460" />
+
+Tint Calc also allows you to save colours you like and, of course, there's a shake to shuffle colour randomiser.
+
+h2. First Solo App
+
+I was reminded by "Steff":http://steff.me that Tint Calc represents the first app I've put on the store which is truly my own; "Weather Maps":http://www.weathermapsapp.com/ had huge involvements from him. So actually this is a pretty big release for me, hopefully I can finish off some of my other apps to join it!
+
+You can find "Tint Calc on the App Store":http://dnl.tl/TintCalc for 59p/99c.
