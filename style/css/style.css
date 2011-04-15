@@ -1,6 +1,7 @@
 /* @override http://danieltull.co.uk/css/style.css */
 
 @import url("gridinator.css");
+@import url("../fonts/museo/stylesheet.css");
 
 body {
     background: #F5F3ED;
