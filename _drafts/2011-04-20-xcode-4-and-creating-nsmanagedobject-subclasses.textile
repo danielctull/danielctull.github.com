@@ -7,8 +7,12 @@ Recently my "DCTManagedObjectAutomatedSetup":https://github.com/danielctull/DCTC
 
 Today, I found out why. A small exercise with a new small project, where I would import some retrieved data into a Core Data model. Again I found this wasn't working. Unlike last time, I wasn't panicked trying to make something, so I actually put decent effort into working it out.
 
-My first step took me to noticing that the check that my managed object was conforming to the DCTManagedObjectAutomatedSetup protocol. This conformance, with the associated methods, I usually put in a category. So I wondered if putting the conformance into the subclass proper would change things. Of course, it did not.
+My first step took me to noticing that the check of my managed object conforming to the DCTManagedObjectAutomatedSetup protocol was failing. This conformance, with the associated methods, I usually put in a category. On the off chance, I wondered if putting the conformance into the subclass proper would change things. Of course, it did not.
 
-It was only when I happened to notice while logging out the managed objects that I noticed something I thought was odd: &lt;NSManagedObject: 0x6847b20&gt;. Shouldn't that be my subclass!?
+It was only while logging out the managed objects that I noticed something I thought was odd: &lt;NSManagedObject: 0x6847b20&gt;. Shouldn't that be my subclass?!
 
-Eventually I got around to looking at the Core Data utility pane, where it gave the class of the entities as NSManagedObject. In Xcode 4, it seems when you create a NSManagedObject subclass, you no-longer have the option to set the class of the entity to the subclass you are creating, so you'll need to check to make sure you really are using the class you've written.
+Eventually I got around to looking at the Core Data utility pane, where it gave the class of the entities as NSManagedObject. In Xcode 4, it seems when you create a NSManagedObject subclass, you no longer have the option to set the class of the entity to the subclass you are creating. 
+
+You should check to make sure you really are using the class you've written by looking in the Core Data utility pane while an entity is selected. There you will find the text field to change the class from NSManagedObject as shown below.
+
+<img class=" aligncenter" src="/images/2011-04-20-xcode-4-and-creating-nsmanagedobject-subclasses/1.png" alt="Apropriately named class in the Core Data utility pane" width="279" height="168" />
