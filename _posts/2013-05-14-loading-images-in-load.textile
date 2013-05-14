@@ -8,16 +8,20 @@ In my current app I have some UIButton subclasses which set up their own appeara
 To do this I was putting my code in the +load method so that it would get loaded without me needing to call it from anywhere else, as shown below.
 
 <pre>
-	@implementation DBSGreyButton
+@implementation DBSGreyButton
 
-	+ (void)load {
-		UIImage *image = [[UIImage imageNamed:@"DBSGreyButton"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 13.0f, 0.0f, 13.0f)];
-		id appearance = [self appearance];
-		[appearance setBackgroundImage:image forState:UIControlStateNormal];
-		[appearance setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
-	}
++ (void)load {
+	UIImage *buttonImage = [UIImage imageNamed:@"DBSGreyButton"];
+	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 13.0f, 0.0f, 13.0f);
+	buttonImage = [buttonImage resizableImageWithCapInsets:edgeInsets];
+	id appearance = [self appearance];
+	[appearance setBackgroundImage:buttonImage
+						  forState:UIControlStateNormal];
+	[appearance setTitleColor:[UIColor darkTextColor]
+					 forState:UIControlStateNormal];
+}
 
-	@end
+@end
 </pre>
 
 Unfortunately, I discovered that the images that get loaded have the scale of 1. My solution is to have a +loadAppearance method that gets called from the AppDelegate.
