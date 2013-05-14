@@ -16,9 +16,9 @@ To do this I was putting my code in the +load method so that it would get loaded
 	buttonImage = [buttonImage resizableImageWithCapInsets:edgeInsets];
 	id appearance = [self appearance];
 	[appearance setBackgroundImage:buttonImage
-						  forState:UIControlStateNormal];
+                          forState:UIControlStateNormal];
 	[appearance setTitleColor:[UIColor darkTextColor]
-					 forState:UIControlStateNormal];
+                     forState:UIControlStateNormal];
 }
 
 @end
