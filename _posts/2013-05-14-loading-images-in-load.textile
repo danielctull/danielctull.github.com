@@ -11,13 +11,13 @@ To do this I was putting my code in the +load method so that it would get loaded
 @implementation DBSGreyButton
 
 + (void)load {
-	UIImage *buttonImage = [UIImage imageNamed:@"DBSGreyButton"];
-	UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 13.0f, 0.0f, 13.0f);
-	buttonImage = [buttonImage resizableImageWithCapInsets:edgeInsets];
-	id appearance = [self appearance];
-	[appearance setBackgroundImage:buttonImage
+    UIImage *buttonImage = [UIImage imageNamed:@"DBSGreyButton"];
+    UIEdgeInsets edgeInsets = UIEdgeInsetsMake(0.0f, 13.0f, 0.0f, 13.0f);
+    buttonImage = [buttonImage resizableImageWithCapInsets:edgeInsets];
+    id appearance = [self appearance];
+    [appearance setBackgroundImage:buttonImage
                           forState:UIControlStateNormal];
-	[appearance setTitleColor:[UIColor darkTextColor]
+    [appearance setTitleColor:[UIColor darkTextColor]
                      forState:UIControlStateNormal];
 }
 
