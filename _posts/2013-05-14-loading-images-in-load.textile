@@ -26,4 +26,6 @@ To do this I was putting my code in the +load method so that it would get loaded
 
 Unfortunately, I discovered that the images that get loaded have the scale of 1. My solution is to have a +loadAppearance method that gets called from the AppDelegate.
 
-Thanks to Chris Parker for confirming that "+load fires before UIApplication init so scale isn't set up yet...":https://twitter.com/ctp/status/334215372611940352.
+Thanks to Chris Parker for confirming that ""+load fires before UIApplication init so scale isn't set up yet...":https://twitter.com/ctp/status/334215372611940352"
+
+Edit: Thanks to Vadim Shpakovski for pointing out that +initialize does work for this, saying it's ""One more reason to not use + (void)load and prefer + (void)initialize to reduce launch time in some cases.":https://twitter.com/vadimshpakovski/status/334229369876791296"
