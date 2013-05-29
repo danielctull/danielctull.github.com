@@ -3,7 +3,7 @@ layout: home
 title: #wwdcnoqueue
 ---
 
-h1.#wwdcnoqueue
+h1. #wwdcnoqueue
 
 Supposedly, us Brits all love queuing, it's a national pastime. But I've had it and I'm finally taking a -stand- sit.
 
