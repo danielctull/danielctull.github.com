@@ -3,19 +3,19 @@ layout: post
 title: Easier merging of Xcode project files
 ---
 
-A while back, I discovered a "script called sort-Xcode-project-file in the WebKit project":https://github.com/WebKit/webkit/blob/master/Tools/Scripts/sort-Xcode-project-file, which sorts the Xcode project by running the following command.
+A while back, I discovered a script called "sort-Xcode-project-file":https://github.com/WebKit/webkit/blob/master/Tools/Scripts/sort-Xcode-project-file in the WebKit project, which sorts the Xcode project by running the following command:
 
 <pre>perl sort-Xcode-project-file [Project].xcodeproj/project.pbxproj</pre>
 
-I started using it to make files easier to find in my projects and just nicer to look at. After a while, I discovered that it helps a lot with merging the Xcode project file. If both sides of the merge are sorted, there are less differences when merging, and makes almost all merges either automatic or extremely easy to tackle.
+I started using it to make files easier to find in my projects and just nicer to look at. After a while, I discovered that it helps a lot with merging the Xcode project file. If both sides of the merge are sorted, there are fewer differences when merging, and makes almost all merges either automatic or extremely easy to tackle.
 
-This script has helped me manage project changes with multiple collaborators, so I suggest if you're coming across merge issues with the Xcode project, or if you've got some amount of OCD, you try it out. I put the script in the repository, with a bash script to make it easier to run.
+This script has helped me manage project changes with multiple collaborators, so I suggest if you're coming across merge issues with the Xcode project, or if you've got some amount of OCD, you try it out. I put the script in the repository, with a bash script to make it easier to run.**
 
 h2. Words of Warning
 
 This script uses regex, so it's potentially fragile and for this reason I _don't_ run it as a pre-commit hook. I commit my changes and then run the script and commit the sorting changes separately, just in case it destroys my project.
 
-An annoying issue I've found is when using static library sub-projects, is that I sometimes see a diff, as shown below, which swaps the order of a Products group containing the library's targets. I'm not 100% sure why, I suppose that Xcode likes to sort them one way, but the script sorts another way. 
+An annoying issue I've found is that when using static library sub-projects, I sometimes see a diff (as shown below) which swaps the order of a Products group containing the library's targets. I'm not 100% sure why, I suppose that Xcode likes to sort them one way, but the script sorts another way. 
 
 This diff can come up if you don't run the script, which I assume is Xcode modifying it to its liking, and running the sort script will remove those changes.
 
