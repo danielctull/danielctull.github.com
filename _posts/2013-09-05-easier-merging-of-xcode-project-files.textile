@@ -19,18 +19,18 @@ An annoying issue I've found is that when using static library sub-projects, I s
 
 This diff can come up if you don't run the script, which I assume is Xcode modifying it to its liking, and running the sort script will remove those changes.
 
-<pre class="textmate-source"><span class="source source_diff"><span class="meta meta_diff meta_diff_range meta_diff_range_unified"><span class="punctuation punctuation_definition punctuation_definition_range punctuation_definition_range_diff">@@</span> <span class="meta meta_toc-list meta_toc-list_line-number meta_toc-list_line-number_diff">-1154,10 +1154,10</span> <span class="punctuation punctuation_definition punctuation_definition_range punctuation_definition_range_diff">@@</span>
-</span>                24D1F5C316BC464B001263D9 /* Products */ = {
+<pre>@@ -1154,10 +1154,10 @@
+                24D1F5C316BC464B001263D9 /* Products */ = {
                         isa = PBXGroup;
                         children = (
-<span class="markup markup_deleted markup_deleted_diff"><span class="punctuation punctuation_definition punctuation_definition_inserted punctuation_definition_inserted_diff">-</span>                               24D1F5C916BC464B001263D9 /* libDCTAuth.a */,
-<span class="punctuation punctuation_definition punctuation_definition_inserted punctuation_definition_inserted_diff">-</span>                               24D1F5CB16BC464B001263D9 /* DCTAuthTests.xctest */,
-</span>                                24D1F5CD16BC464B001263D9 /* DCTAuth.app */,
+-                               24D1F5C916BC464B001263D9 /* libDCTAuth.a */,
+-                               24D1F5CB16BC464B001263D9 /* DCTAuthTests.xctest */,
+                                24D1F5CD16BC464B001263D9 /* DCTAuth.app */,
                                 24DAF6D7177876D300D7B93F /* DCTAuth.bundle */,
-<span class="markup markup_inserted markup_inserted_diff"><span class="punctuation punctuation_definition punctuation_definition_inserted punctuation_definition_inserted_diff">+</span>                               24D1F5CB16BC464B001263D9 /* DCTAuthTests.xctest */,
-<span class="punctuation punctuation_definition punctuation_definition_inserted punctuation_definition_inserted_diff">+</span>                               24D1F5C916BC464B001263D9 /* libDCTAuth.a */,
-</span>                        );
++                               24D1F5CB16BC464B001263D9 /* DCTAuthTests.xctest */,
++                               24D1F5C916BC464B001263D9 /* libDCTAuth.a */,
+                        );
                         name = Products;
-                        sourceTree = "&lt;group>";</span></pre>
+                        sourceTree = "&lt;group>";</pre>
 
 What's even weirder is that these groups don't seem to be part of the main project file, but are contained in the library sub-projects. Those projects are untouched by the script, but I can't seem to locate what else this section of the project XML might represent in the Xcode UI.
