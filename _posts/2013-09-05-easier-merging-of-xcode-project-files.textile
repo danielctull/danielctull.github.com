@@ -9,7 +9,7 @@ A while back, I discovered a script called "sort-Xcode-project-file":https://git
 
 I started using it to make files easier to find in my projects and just nicer to look at. After a while, I discovered that it helps a lot with merging the Xcode project file. If both sides of the merge are sorted, there are fewer differences when merging, and makes almost all merges either automatic or extremely easy to tackle.
 
-This script has helped me manage project changes with multiple collaborators, so I suggest if you're coming across merge issues with the Xcode project, or if you've got some amount of OCD, you try it out. I put the script in the repository, with a bash script to make it easier to run.**
+This script has helped me manage project changes with multiple collaborators, so I suggest if you're coming across merge issues with the Xcode project, or if you've got some amount of OCD, you try it out. I put the script in the repository, with a bash script to make it easier to run.
 
 h2. Words of Warning
 
