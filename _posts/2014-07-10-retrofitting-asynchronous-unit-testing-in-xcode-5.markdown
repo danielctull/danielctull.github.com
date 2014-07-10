@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asynchronous Unit Testing in Xcode 6
+title: Retrofitting Asynchronous Unit Testing in Xcode 5
 ---
 
 With Xcode 6, Apple have finally given us a sanctioned way to perform asynchronous unit tests. For more information about this you can watch the WWDC 2014 session [Testing in Xcode 6](https://developer.apple.com/videos/wwdc/2014/#414-video) or read the new [Testing with Xcode](https://developer.apple.com/library/prerelease/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/testing_3_writing_test_classes/testing_3_writing_test_classes.html#//apple_ref/doc/uid/TP40014132-CH4-SW6) document.
