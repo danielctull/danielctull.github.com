@@ -11,7 +11,7 @@ Previously, I've used techniques similar to Mike Ash's [NSRunLoop-based example]
 
 The following shows how you would use this code, it might look extremely similar to examples from Apple's documentation.
 
-``` objective-c
+```
 @import XCTest;
 #import <AsynchronousTesting/AsynchronousTesting.h>
 #import "XCTestCase+DCTAsynchronousTesting.h"
