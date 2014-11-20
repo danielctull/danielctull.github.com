@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An error was encountered while running (Domain = LaunchServicesError, Code = 0)
+title: An error was encountered while running
 ---
 
 Along with a lot of the rest of the iOS community, I was playing around with WatchKit yesterday, adding initial support to my app [Coordination](https://itunes.apple.com/gb/app/coordination-location-utility/id625226776).
