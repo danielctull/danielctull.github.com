@@ -9,10 +9,6 @@ html {
     color: #FF7F00;
 }
 
-.header .highlight {
-    color: #000;
-}
-
 body {
 	margin: 0;
 }
@@ -23,12 +19,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-
-#logo {
-	width: 100%;
-    max-width: 300pt;
-    max-height: 150pt;
 }
 
 /** CUSTOM BULLETS */
@@ -50,12 +40,11 @@ a:hover {
 }
 
 /** HEADER */
-div.header {
+.header {
 	padding: 0.5em;
-    color: #FF7F00;
 }
 
-div.header h1 {
+.header h1 {
 	font-weight: 300;
 }
 
