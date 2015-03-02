@@ -1,0 +1,57 @@
+@import url(style.css);
+
+.hero {
+    padding: 0;
+    margin-top: 3em;
+}
+
+.welcome h1 {
+    font-size: 3.7em;
+    font-weight: 100;
+}
+
+.welcome h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.hero {
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}  
+
+.app {
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    margin: 1em;
+}
+
+.app img {
+    width: 12em;
+    -webkit-border-radius: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.app h1 {
+    font-size: 1.6em;
+    font-family: 'Helvetica Nueue', sans-serif;
+    font-weight: 200;
+    margin: 0.5em 0 0 0;
+}
+
+a.app {
+  color: #000;
+}
+
+a.app:hover {
+  text-decoration: none;
+}
+
+
+
+
+
+
