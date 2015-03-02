@@ -103,6 +103,10 @@ div.page {
     text-align: center;
 }
 
+pre {
+    overflow-x: scroll;
+}
+
 .date {
     font-weight: 200;  
     margin: 1em 0;     
