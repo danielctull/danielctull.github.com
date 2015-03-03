@@ -12,5 +12,24 @@ ul.archive li {
 }
 
 ul.archive a {
+}
+
+ul.archive .date {
+    font-weight: 400;
     display: block;
+    text-align: left;
+    margin:0;
+}
+
+ul.archive .extra {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+ul.archive .extra:before {
+    content: "[";
+}
+
+ul.archive .extra:after {
+    content: "]";
 }

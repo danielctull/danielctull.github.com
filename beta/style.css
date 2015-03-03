@@ -105,6 +105,7 @@ div.page {
 
 pre {
     overflow-x: scroll;
+    font-family: "Menlo", "Source Code Pro", monospace;
 }
 
 .date {
