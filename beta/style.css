@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    word-wrap: break-word;
 	margin: 0;
 }
 
@@ -104,6 +105,7 @@ div.page {
 }
 
 pre {
+    word-wrap: normal;
     overflow-x: scroll;
     font-family: "Menlo", "Source Code Pro", monospace;
 }
