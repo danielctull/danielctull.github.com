@@ -11,46 +11,24 @@
 	</head>
 
 	<body>
-		<div id="wrapper" class="wrapper">
-			<div id="inner-wrapper" class="inner-wrapper">
-				<div class="page sixteen-col">
-										
-					<div class="sixteen-col last-col">
-						<div class="main-content main-text">
-							{{ content }}
-	                	</div>
-	            	</div>
-					
-					<div class="sidebar four-col">
-						<div class="section">
-							{% include recentpostsmenu.html %}
-						</div>
-					</div>
-					
-					<div class="sidebar four-col">
-						<div class="section">
-							{% include opensourcemenu.html %}
-						</div>
-					</div>
-					
-					<div class="sidebar four-col">
-						<div class="section">
-							{% include appsmenu.html %}
-						</div>
-					</div>
-
-					<div class="sidebar four-col last-col">
-						<div class="section">
-							{% include aboutmenu.html %}
-						</div>
-					</div>
-					
-					<div class="footer sixteen-col">
-						{% include footer.html %}
-					</div>
-					
-				</div>				
-			</div>
+		<div class="welcome page">
+			<h1>Hello! I'm <span class="highlight">Daniel Tull</span>, a freelance iOS <span class="highlight amp">&amp;</span> Mac Developer</h1>
+			<h2>If you need someone to make lovely Cocoa applications, look no further.</h2>
+		</div>
+		
+		{% include menu.html %}
+		
+		<div class="page">
+            <div class="hero">
+                <a class="app" href="http://danieltull.co.uk/issues">
+    				<img src="images/Issues.svg" /> 
+    				<h1>Issues</h1>
+    			</a>
+    			<a class="app" href="http://danieltull.co.uk/coordination">
+    				<img src="images/Coordination.svg" /> 
+    				<h1>Coordination</h1>
+    			</a>
+            </div>
 		</div>
 		{% include analytics.html %}
 	</body>
