@@ -1,13 +1,33 @@
----
-layout: post
-title: Archive
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daniel Tull: Blog</title>
+		<meta name="description" content="Daniel Tull is a freelance developer from Guildford, UK, working on iOS and Mac apps for clients such as Sky, BBC, Tesco and Gok Wan.">
+		<meta name="author" content="Daniel Tull">
+		<meta name="keywords" content="freelance,contract,ios,mac,developer,apps,london,uk">
+		<link rel="stylesheet" href="/beta/style/css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/beta/style/css/list.css" type="text/css" media="screen" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/DanielTull" />
+		<link rel="service.feed" type="application/atom+xml" title="Atom" href="http://feeds.feedburner.com/DanielTull" />
+	</head>
+	<body>
+		
+		<div class="header page">
+            <h1><a href="home.html">Daniel Tull</a>: Blog</h1>
+		</div>
+		
+		{% include menu.html %}
 
-<ul class="archive">
-{% for post in site.posts %}
-<li>
-	<span class="date">{{ post.date | date: "%d %B %Y" }}</span>
-	<span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
-</li>
-{% endfor %}
-</ul>
+		<div class="main page">
+			<ul class="archive">
+			{% for post in site.posts %}
+			<li>
+				<span class="date">{{ post.date | date: "%d %B %Y" }}</span>
+				<span class="title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+			</li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% include analytics.html %}
+  	</body>
+</html>
