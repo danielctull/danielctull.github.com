@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ site.name }}: {{ page.title }}</title>
+		<title>{{ page.title }}</title>
 		<meta name="description" content="Daniel Tull is a freelance developer from Guildford, UK, working on iOS and Mac apps for clients such as Sky, BBC, Tesco and Gok Wan.">
 		<meta name="author" content="Daniel Tull">
 		<meta name="keywords" content="freelance,contract,ios,mac,developer,apps,london,uk">
@@ -10,42 +10,17 @@
 		<link rel="service.feed" type="application/atom+xml" title="Atom" href="http://feeds.feedburner.com/DanielTull" />
 	</head>
 	<body>
-		<div id="wrapper" class="wrapper">
-			<div id="inner-wrapper" class="page inner-wrapper">
-            
-				<div class="sidebar four-col">
-                	<h3 class="logo"><a href="/">Daniel Tull</a></h3>
+		
+		<div class="header page">
+            <h1><a href="home.html">Daniel Tull</a>: Blog</h1>
+		</div>
+		
+		{% include header.html %}
 
-					<div class="section">
-						{% include recentpostsmenu.html %}
-					</div>
-					
-					<div class="section">
-						{% include opensourcemenu.html %}
-					</div>
-					
-					<div class="section">
-						{% include appsmenu.html %}
-					</div>
-					
-					<div class="section">
-						{% include aboutmenu.html %}
-					</div>
-				</div>
-				
-				<div class="twelve-col last-col">
-					<div class="post main-text">
-						<h1>{{ page.title }}</h1>
-						<h5 class="postdate">{{ page.date | date: "%A, %d %B %Y" }}</h5>
-						{{ content }}
-					</div>
-				</div>
-				
-				<div class="footer sixteen-col">
-					{% include footer.html %}
-				</div>
-				
-			</div>
+		<div class="main page">
+			<h1>{{ page.title }}</h1>
+			<h5 class="date">{{ page.date | date: "%A, %d %B %Y" }}</h5>
+			{{ content }}
 		</div>
 		{% include analytics.html %}
   	</body>
