@@ -12,12 +12,12 @@
 	</head>
 
 	<body>
-		<div class="welcome page">
-			<h1>Hello! I'm <span class="highlight">Daniel Tull</span>, a freelance iOS <span class="highlight amp">&amp;</span> Mac Developer</h1>
-			<h2>If you need someone to make lovely Cocoa applications, look no further.</h2>
-		</div>
-		
+			
 		{% include menu.html %}
+		
+		<div class="welcome page">
+			{% page.content %}
+		</div>
 		
 		<div class="page">
             <div class="hero">
