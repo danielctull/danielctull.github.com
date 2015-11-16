@@ -13,13 +13,24 @@ On the 20th October, I added the following issue to Issues' tracker: **#238: Rem
 
 Issues has the potential to store very private and very secret information; from amazing new features for products, damning security bugs to just embarressing mess ups. These are generally the same reasons many companies choose to host their source code and bug trackers in house, and I have taken the decision that Issues will communicate with only the servers my users trust.
 
-I would like to just point out now that I have never *ever* provided either Google Analytics (which was removed in version 1.2) or Crashlytics with any data from a connected bug tracker. I used both to track things like sales and which screens were being hit and the latter for crash reporting.
+I would like to just point out now that I have never *ever* provided either Google Analytics (which was removed in version 1.2) or Crashlytics with any data from a connected bug tracker. I used the former to track sales and which screens were being hit and the latter for crash reporting.
 
 However, how can I expect my users to trust me on that? Trust is hard enough to win face-to-face, let alone when you're only reading their words or perhaps have no contact at all.
 
 If someone at a highly secure company is considering Issues, I want to make sure the only network connections from my app are to their servers.
 
 Lets face it, both Google Analytics and Crashlytics are black boxes. Can a sole developer like myself really trust and *know* that they aren't doing something that I wouldn't approve of?
+
+This has honestly weighed on my mind since I released Issues.
+
+## Data
+
+The reason I chose to include Google Analytics in the first place was a fear that I wouldn't get some important data that would inform me about which decisions I should make.
+
+It turns out users have just emailed me about what they want. Almost every request has mentioned one omission, which was cut from previous versions because of time constraints and will make it into the upcoming version 1.2 of the app.
+
+Analytics has shown me no useful data. If I spent some time to research what to track it might help me, but just tracking pages has revealed nothing but [vanity metrics](http://www.startuplessonslearned.com/2009/12/why-vanity-metrics-are-dangerous.html).
+
 
 ## Crashes from iTunes Connect & Xcode 
 
