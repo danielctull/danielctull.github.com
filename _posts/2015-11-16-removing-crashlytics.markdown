@@ -23,21 +23,22 @@ Lets face it, both Google Analytics and Crashlytics are black boxes. Can a sole 
 
 This has honestly weighed on my mind since I released Issues.
 
-## Data
+## Analytics
 
 The reason I chose to include Google Analytics in the first place was a fear that I wouldn't get some important data that would inform me about which decisions I should make.
 
 It turns out users have just emailed me about what they want. Almost every request has mentioned one omission, which was cut from previous versions because of time constraints and will make it into the upcoming version 1.2 of the app.
 
-Analytics has shown me no useful data. If I spent some time to research what to track it might help me, but just tracking pages has revealed nothing but [vanity metrics](http://www.startuplessonslearned.com/2009/12/why-vanity-metrics-are-dangerous.html).
+The way I had Google Analytics showed no useful data. If I spent some time to research what to track it might help me, but just tracking pages revealed nothing but [vanity metrics](http://www.startuplessonslearned.com/2009/12/why-vanity-metrics-are-dangerous.html).
 
 
 ## Crashes from iTunes Connect & Xcode 
 
-Recently, I've had a couple of reports from beta testers of crashes and Xcode has picked them up. Frankly, if Xcode can do the job of Crashlytics.
+Recently, I've had a couple of reports from beta testers of crashes and Xcode has picked them up. This was the point I realised that I really just didn't need Crashlytics.
 
 It must be said that Crashlytics still has a superior way of viewing crashes than Xcode. For some reason Xcode wants you to select a version to fetch the crashes for that release of the app. When beta releases can be once every day or two, you end up with a lot of builds that *could* contain crashes.
 
 <img class="aligncenter" src="/images/2015-11-16-removing-crashlytics/1.png" alt="Many different builds in Xcode's build list" width="144" height="330" />
 
-Seriously, it'd be great if Xcode just had a list of crashes that you could then select and see what version it was, as it stands it's quite easy to miss crashes. On the other hand, if a tester reports that build 2348 crashes then it's easy to find.
+Seriously, it'd be great if Xcode just had a list of crashes that you could then select and see what version it was, as it stands it's quite easy to miss crashes. On the other hand, if a tester reports that build 2348 crashes then it's easy to find. I've filled [rdar://23559628](rdar://23559628) ([Open Radar](http://openradar.appspot.com/23559628)) with Apple.
+	
