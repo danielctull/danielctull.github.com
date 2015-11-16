@@ -7,7 +7,9 @@ One of the beta releases of [Issues](http://danieltull.co.uk/issues) caused one 
 
 <blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="https://twitter.com/danielctull">@danielctull</a> #238 yes!</p>&mdash; Lee Armstrong (<a href="https://twitter.com/lesmond">@lesmond</a>) <a href="https://twitter.com/lesmond/status/662897418724339712">7 November 2015</a></blockquote>
 
-This was in reference to a ticket I added to Issues' tracker: **#238: Remove Crashlytics**. Today version 1.1.2 was released without Crashlytics and after removing Google Analytics in version 1.1, I can now say Issues contains no tracking libraries. On Twitter this evening I received a couple of enquires as to why I had chosen to do this, so I thought I'd provide a little detail about it here.
+This was in reference to a ticket I added to Issues' tracker: **#238: Remove Crashlytics**.
+
+Today version 1.1.2 was released without Crashlytics and after removing Google Analytics in version 1.1, I can now say Issues contains no tracking libraries. On Twitter this evening I received a couple of enquires as to why I had chosen to do this, so I thought I'd provide a little detail about it here.
 
 ## Trust
 
