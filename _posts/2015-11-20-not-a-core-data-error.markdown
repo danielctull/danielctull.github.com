@@ -12,6 +12,6 @@ In [Issues](http://danieltull.co.uk/issues) I make use of Core Data and one thin
 
 When a model change happens, I delete the store at the URL I gave and recreate a new one in its place.
 
-The problem above occurred for me because Core Data creates journaling files alongside the file I specify. When I delete the store, I don't touch these files, mainly because there's not really a way to know about them – they have the same filename prefix with `-wal` or `/-shm` or whatever appended, so I could delete all the files with the same filename prefix.
+The problem above occurred for me because Core Data creates journaling files alongside the file I specify. When I delete the store, I don't touch these files, mainly because there's not really a way to know about them – they have the same filename prefix with `-wal` or `-shm` appended, so I could delete all the files with the same filename prefix.
 
 An easier solution I saw was to create a directory at the URL and make the actual store inside that directory. This way, when I need to delete the store, I can remove the folder safely knowing that all the journaling files will be removed as well.
