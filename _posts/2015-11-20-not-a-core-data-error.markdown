@@ -15,3 +15,11 @@ When a model change happens, I delete the store at the URL I gave and recreate a
 The problem above occurred for me because Core Data creates journaling files alongside the file I specify. When I delete the store, I don't touch these files, mainly because there's not really a way to know about them – they have the same filename prefix with `-wal` or `-shm` appended, so I could delete all the files with the same filename prefix.
 
 An easier solution I saw was to create a directory at the URL and make the actual store inside that directory. This way, when I need to delete the store, I can remove the folder safely knowing that all the journaling files will be removed as well.
+
+###Update 26th November 2015
+
+[Pete Callaway](http://twitter.com/P373C) has pointed out to me that a method called `destroyPersistentStoreAtURL:withType:options:error:` was added to NSPersistentStoreCoordinator in iOS 9 that deletes a store and its associated files.
+
+This should negate the need to try to guess what extra files Core Data or SQL might create now or in the future.
+
+It was also mentioned at [WWDC this year](https://developer.apple.com/videos/play/wwdc2015-220/?time=530).
