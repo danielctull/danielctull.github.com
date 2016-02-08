@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/danielctull
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://danieltull.co.uk
+  * I am danielctull (https://keybase.io/danielctull) on keybase.
+  * I have a public key with fingerprint 2EC6 FD1A AF32 D8D2 E5E8  ED4B E81B 54F1 AF2C 4CB1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120a5ede9a8af2e9a375d8086746daa0fa8f1b48b65c58b24574f97528b3b455c8a0a",
+            "fingerprint": "2ec6fd1aaf32d8d2e5e8ed4be81b54f1af2c4cb1",
+            "host": "keybase.io",
+            "key_id": "e81b54f1af2c4cb1",
+            "kid": "010120edfdaf7792b394ee78d2e2784b5d965b806fb1c9beb8f9d8611a245c541e720a",
+            "uid": "bfb4a6a3b76ddcf271983951c912d219",
+            "username": "danielctull"
+        },
+        "service": {
+            "hostname": "danieltull.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454942498,
+    "expire_in": 157680000,
+    "prev": "d9cb8bd4933d9b5c9a9290d3b73760d2e4629b80a8a8576bcc95d33efed92ae8",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUmtoFUcUvjcmjU0JNIrEZ1uXYmx7CTuzM7szV1So0hoRDZgaI9LrvDauubl7
+3d1E0yj1VVIp1fyRSP60htqaWLQ+kGLjoxoEI/EBRkWwrUWLlYraSiFt1M4G/VFw
+/hxmzvd95ztnTnvpqERJ8s6kmof7UwsOJM/9zhNLvu9+q9Xgvmwx0q1GgxoJKitV
+GGUaPGmkDRNAk2ElFWWEuVAHy8GSmMR2kC0ZM11GXMAR4TYWmHCIsINc6mBIuMUR
+xoIwkxkpw/Vy9SrIB14u0rJQCduVgDHXgpJIqLAiSiKuCOAYuUCXEkhwoIkr/TBm
+aHOcharS8/WbvmRG7L0A/9x37FxJVzLXcSjkFkVKOXEp6BDEsaQ25sS0XQ4E5YoT
+l0piA8B0BwIjoBw44rtpRI67HDGbWdyxpRQudAAlFsWaCqCEgMbAUAU51qg0WrKc
+p7IiaspmjfUpQyeaPaHi2cbN/A8UYyqFX9nUoCXygR/5ws/q7MooyqdjctSSj9Fr
+FM8808lwLyf1NDWhWQWh5+eMNNBIEXmxMEAYUQQRJSlDrc17gcp4MQI7NjH1icuo
+5tjAh1RwwiWiliUpx4IyCqkpdZOWY5t6UsiGVM9I/zzRbC4ExdKylKskhUwRI25t
+dc430rpUxOq1ZujV51jUFChjfcnW5OTCRLIk8VJRQbxniZKXX32+fHczxU8XfzIO
+VVewRbO/Gvj3m4P31XDRtPZdYdHgut7hmytI357t5O1XvlhVWdx1ftI4yD97EL6/
+c2LV58UP/9zZXdd3eeCf26cKe3tOFtQca5w7A3xQWya3Vew4lAg+bfuJBN0fHXjU
+W37nyarXfn33+NVHRbunfL1h6oRZp7Ntuxqm3TzLHq94shbv7fz2j+TGG1WpiaP3
+TW++N6ri9A9Py9+7dKZ8qG1u+OXC6o97h9tP/Ly568f+qsHGjit1y65dqdsy/vI7
+84/+VV62bqij5/ZgT8fQ8jmg62Ttjmhy3YWtNWWP/349c+Ti1KW/VKi7h2+MKWxd
+fmLsrS1Vb35XurDl1vVUf/umeW/81te5oHTmrP8A
+=W/ZB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/danielctull
+
+==================================================================
+
